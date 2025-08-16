@@ -1,8 +1,4 @@
-.content {
-  height: 100%;
-}
-
-.hero-section {
+.content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,18 +9,18 @@
     0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.hero-section .heading {
+.content-container .heading {
   font-size: 6rem;
   text-align: center;
 }
 
-.hero-section .sub-heading {
+.content-container .sub-heading {
   font-style: italic;
   font-size: 3.2rem;
   margin-top: -3.2rem;
 }
 
-.hero-section .text {
+.content-container .text {
   font-size: 2.4rem;
   text-align: center;
   width: clamp(45ch, 50%, 50ch);

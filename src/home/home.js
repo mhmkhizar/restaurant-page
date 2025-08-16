@@ -1,4 +1,4 @@
-import { createElement } from "../index.js";
+import { createElement, contentContainer } from "../utility.js";
 import "./home.css";
 
 const content = {
@@ -11,15 +11,16 @@ const content = {
             inspired by global cuisines.`,
 };
 
-const section = createElement(`section`, `hero-section`);
-const h2 = createElement(`h2`, `heading`);
-const h3 = createElement(`h3`, `sub-heading`);
-const p = createElement(`p`, `text`);
+function loadHome() {
+  const heading = createElement(`h2`, `heading`);
+  const subHeading = createElement(`h3`, `sub-heading`);
+  const para = createElement(`p`, `text`);
 
-h2.textContent = content.heading;
-h3.textContent = content.subHeading;
-p.textContent = content.text;
+  heading.textContent = content.heading;
+  subHeading.textContent = content.subHeading;
+  para.textContent = content.text;
 
-section.append(h2, h3, p);
+  contentContainer.append(heading, subHeading, para);
+}
 
-export { section };
+export { loadHome };
