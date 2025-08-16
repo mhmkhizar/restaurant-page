@@ -91,7 +91,7 @@ body {
   flex-direction: column;
   height: 100vh;
   padding: 6.4rem 0;
-  background: url("./hero.png") center / cover no-repeat;
+  background: url("./images/background.png") center / cover no-repeat;
 }
 
 .header {
@@ -110,36 +110,4 @@ body {
 
 .header .navigation .button:not(:last-child) {
   margin-right: 4.2rem;
-}
-
-.content {
-  height: 100%;
-}
-
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.4rem;
-  height: 100%;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.2),
-    0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.hero-section .heading {
-  font-size: 6rem;
-  line-height: 0.8;
-  text-align: center;
-}
-
-.hero-section .heading span:last-child {
-  font-style: italic;
-  font-size: 3.2rem;
-}
-
-.hero-section .text {
-  font-size: 2.4rem;
-  text-align: center;
-  width: clamp(45ch, 50%, 50ch);
 }
