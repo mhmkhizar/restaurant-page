@@ -15,13 +15,13 @@
 
 .hero-section .heading {
   font-size: 6rem;
-  line-height: 0.8;
   text-align: center;
 }
 
-.hero-section .heading span:last-child {
+.hero-section .sub-heading {
   font-style: italic;
   font-size: 3.2rem;
+  margin-top: -3.2rem;
 }
 
 .hero-section .text {
