@@ -1,5 +1,4 @@
 import { createElement } from "../utility.js";
-import "./home.css";
 
 const content = {
   heading: `Welcome to The Flavor Haven`,
@@ -11,7 +10,9 @@ const content = {
             inspired by global cuisines.`,
 };
 
-function loadHome() {
+async function loadHome() {
+  await import(`./home.css`);
+
   const contentContainer = document.querySelector(`#contentContainer`);
   const heading = createElement(`h2`, `heading`);
   const subHeading = createElement(`h3`, `sub-heading`);
