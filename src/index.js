@@ -1,4 +1,8 @@
 import "./styles.css";
-import { loadHome } from "./home/home.js";
 
-loadHome();
+showHome();
+
+async function showHome() {
+  const module = await import("./home/home.js");
+  module.loadHome();
+}
