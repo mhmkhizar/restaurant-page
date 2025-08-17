@@ -1,4 +1,4 @@
-import { createElement, contentContainer } from "../utility.js";
+import { createElement } from "../utility.js";
 import "./home.css";
 
 const content = {
@@ -12,6 +12,7 @@ const content = {
 };
 
 function loadHome() {
+  const contentContainer = document.querySelector(`#contentContainer`);
   const heading = createElement(`h2`, `heading`);
   const subHeading = createElement(`h3`, `sub-heading`);
   const para = createElement(`p`, `text`);

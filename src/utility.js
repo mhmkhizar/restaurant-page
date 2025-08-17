@@ -6,6 +6,4 @@ function createElement(name, className, id) {
   return element;
 }
 
-const contentContainer = document.querySelector(`#contentContainer`);
-
-export { createElement, contentContainer };
+export { createElement };
