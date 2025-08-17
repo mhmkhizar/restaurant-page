@@ -1,0 +1,27 @@
+.content-container .heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.content-container .menu-container {
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu-container .dish-card {
+  width: 200px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2.4rem 1.6rem;
+  border-radius: 0.8rem;
+}
+
+.dish-card .dish-title {
+  margin-bottom: 0.8rem;
+}
