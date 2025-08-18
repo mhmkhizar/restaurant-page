@@ -217,5 +217,6 @@ body {
 }
 
 .about-content .card .title {
+  text-decoration: underline;
   margin-bottom: 0.8rem;
 }
