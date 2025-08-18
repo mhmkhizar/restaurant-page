@@ -1,4 +1,4 @@
-import { createElement } from "./utils/utility";
+import { createElement } from "./utils/utility.js";
 
 const content = {
   heading: `Get In Touch`,
