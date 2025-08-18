@@ -1,6 +1,7 @@
 import { createElement } from "../utility.js";
 
 const content = {
+  heading: `Our Signature Dishes`,
   dish1: {
     title: `Truffle Mushroom Risotto`,
     description: `Creamy arborio rice infused with white truffle oil, topped with sautéed wild mushrooms and parmesan shavings.`,
@@ -39,10 +40,30 @@ const content = {
   },
 };
 
-function loadMenu() {
+async function loadMenu() {
+  await import(`./menu.css`);
+
   const contentContainer = document.querySelector(`#contentContainer`);
+  const heading = createElement(`h1`, `heading`);
   const menuContainer = createElement(`section`, `menu-container`);
-  const dishCard = createElement(`div`, `dish-card`);
-  const dishTitle = createElement(`h3`, `dish-title`);
-  const dishDescription = createElement(`p`, `dish-description`);
+
+  heading.textContent = content.heading;
+  contentContainer.appendChild(heading);
+
+  for (let key in content) {
+    if (!key.startsWith(`dish`)) continue;
+
+    const dishCard = createElement(`div`, `dish-card`);
+    const dishTitle = createElement(`h3`, `dish-title`);
+    const dishDescription = createElement(`p`, `dish-description`);
+
+    dishTitle.textContent = content[key].title;
+    dishDescription.textContent = content[key].description;
+    dishCard.append(dishTitle, dishDescription);
+    menuContainer.appendChild(dishCard);
+  }
+
+  contentContainer.appendChild(menuContainer);
 }
+
+export { loadMenu };
